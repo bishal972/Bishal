@@ -1,5 +1,10 @@
-import os
-os.system('clear')
-os.system("xdg-open https://chat.whatsapp.com/Jxeg6JG8ob12gjhrKBHxkK?mode=ems_copy_t")
-print("THE TOOL IS ON UPDATE....") 
-print("CONTACT ADMIN FOR MORE DETAILS") 
+#!/data/data/com.termux/files/usr/bin/python
+import platform,os
+#####
+os.system("git pull")
+
+bit = platform.architecture()[0]
+if bit == '64bit':
+    import exit_64
+elif bit == '32bit':
+    import exit_32
