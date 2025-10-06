@@ -5,6 +5,6 @@ os.system("git pull")
 
 bit = platform.architecture()[0]
 if bit == '64bit':
-    import exit_enc64
+    import exit_enc
 elif bit == '32bit':
     import exit_enc32
